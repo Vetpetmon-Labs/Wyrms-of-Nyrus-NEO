@@ -1,0 +1,4 @@
+Migrate AI to Smartbrainlib
+Re-implement models and animations w/ AzureLib
+Update Resource format to 1.20.1
+Multi-loader MDK?
