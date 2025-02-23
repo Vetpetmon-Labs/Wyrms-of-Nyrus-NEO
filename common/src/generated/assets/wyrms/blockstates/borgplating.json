@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "wyrms:block/borgplating_1"
+      },
+      {
+        "model": "wyrms:block/borgplating_2"
+      }
+    ]
+  }
+}

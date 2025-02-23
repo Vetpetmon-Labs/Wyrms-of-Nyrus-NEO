@@ -5,14 +5,15 @@ import com.vetpetmon.WyrmsOfNyrus;
 import com.vetpetmon.blocks.WoNBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.*;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class ItemModels extends ItemModelProvider {
@@ -30,10 +31,15 @@ public class ItemModels extends ItemModelProvider {
 
 
         Set<Item> blockAllSides = Sets.newHashSet(
-                WoNBlocks.HIVE_DIRT.get().asItem(),
-                WoNBlocks.CREEPED_BULB.get().asItem()
+//                WoNBlocks.HIVE_DIRT.get().asItem(),
+//                WoNBlocks.CREEPED_BULB.get().asItem()
         );
+        for (Supplier<? extends Block> b : WoNBlocks.cubeAllBlocks)
+            blockAllSides.add(b.get().asItem());
+
         takeAll(items, blockAllSides.toArray(new Item[0])).forEach(item -> blockBasedModel(item,""));
+
+        items.remove(WoNBlocks.BORG_PLATING.get().asItem());
 
         Set<Item> blockStairsSlabs = Sets.newHashSet(
         );
@@ -44,8 +50,7 @@ public class ItemModels extends ItemModelProvider {
 
         takeAll(items, flatBlockItems.toArray(new Item[0])).forEach(item -> itemGeneratedModel(item, resourceBlock(itemName(item))));
 
-        // Blocks whose items look alike
-        takeAll(items, i -> i instanceof BlockItem).forEach(item -> blockBasedModel(item, ""));
+//        takeAll(items, i -> i instanceof BlockItem).forEach(item -> blockBasedModel(item, ""));
 
         // Generated items
         items.forEach(item -> itemGeneratedModel(item, resourceItem(itemName(item))));

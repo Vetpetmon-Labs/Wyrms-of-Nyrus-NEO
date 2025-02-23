@@ -1,5 +1,23 @@
-// 1.20.1	2025-02-22T22:44:11.7997202	Block States: wyrms
+// 1.20.1	2025-02-23T00:22:05.7078462	Block States: wyrms
+c46f2b6eb5b7f245f186b93071b58203959f768a assets/wyrms/blockstates/coolanttower.json
+e406381d67e8a416f18de8e9a940a577dd43a910 assets/wyrms/blockstates/corium.json
 a5f31e880f8e8749168514f5009fe106c423bd88 assets/wyrms/blockstates/creepedbulb.json
 0e4dc707db987c8a4b6d2709e923d3ee9dff09a8 assets/wyrms/blockstates/hivedirt.json
+1ef3db19fb777a7077e895683ca707cf2cd46627 assets/wyrms/blockstates/meltdowncoal.json
+0fb78fc383ac634e26ffd8b2cb2403a08c109cb4 assets/wyrms/blockstates/meltdowndiamond.json
+502ccab325fb608824a2e1751b9353b2555247dd assets/wyrms/blockstates/meltdownemerald.json
+2fc76f44c6e39353ee3f318e1641f1bb251a0e72 assets/wyrms/blockstates/meltdowngold.json
+cbbf2706a44d8561621a726a85c3d2979ad57611 assets/wyrms/blockstates/meltdowniron.json
+e2b888e7852bd857b81fefc543535d9f062574df assets/wyrms/blockstates/meltdownlapis.json
+2404c1eb6116185f0e3ff393379113876157694c assets/wyrms/blockstates/meltdownredstone.json
+829c4c9d9aeecb44699c06dd1e8082ff49023ac0 assets/wyrms/models/block/coolanttower.json
+a271d0c283f30790738290a97390b316a2c7375e assets/wyrms/models/block/corium.json
 eab2ef446239f23eaf99770327672a302b4e314e assets/wyrms/models/block/creepedbulb.json
 0f11122b380b61ab498de14edd3f2739764b68f3 assets/wyrms/models/block/hivedirt.json
+278531bd4a31e3ed9b725e6b220b11f219a34566 assets/wyrms/models/block/meltdowncoal.json
+93f6c6c41864e32c2d66a121e8135a4955546637 assets/wyrms/models/block/meltdowndiamond.json
+191abbade43a0aa127089564510a71bdfa54e674 assets/wyrms/models/block/meltdownemerald.json
+5325ee9368ec9188abd2c4d23f512c214722ac4b assets/wyrms/models/block/meltdowngold.json
+48624b695ab3cd8f6efd3dbe70083b80f8122a57 assets/wyrms/models/block/meltdowniron.json
+e7e56eb40e546ad4230ffcdb5c39acda24c6e0e3 assets/wyrms/models/block/meltdownlapis.json
+803efdea9054313a2cf2c0aef6795fbafa8052a2 assets/wyrms/models/block/meltdownredstone.json

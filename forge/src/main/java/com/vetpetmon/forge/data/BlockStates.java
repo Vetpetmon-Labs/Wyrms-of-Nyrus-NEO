@@ -58,6 +58,8 @@ public class BlockStates extends BlockStateProvider {
 
         for (Supplier<? extends Block> b : WoNBlocks.cubeAllBlocks)
             cubeAllSides(b.get());
+//        for (Supplier<? extends Block> b : WoNBlocks.cubeAllBlocksVariants)
+//            simpleBlock(b.get(),models().getExistingFile(resourceBlock(blockName(b.get()))));
 
     }
     public void completeRandBlockSet(Block block, StairBlock stairs, SlabBlock slab){
@@ -76,6 +78,45 @@ public class BlockStates extends BlockStateProvider {
         this.simpleBlock(block,
                 models().cubeAll(blockName(block),resourceBlock(blockName(block))));
     }
+
+    //SCREW THIS WHAT AM I DOING???
+    //FIXME:FIX THIS
+//    public void cubeAllSidesWithVariants(Block block, int variants) {
+////        List<ConfiguredModel> variantz = new ArrayList<>();
+////
+////        for (int i = 0; i < variants; i++) {
+////            variantz.add(new ConfiguredModel(
+////                    models().cubeAll(
+////                            blockName(block),
+////                            resourceBlock(blockName(block) + "_" + i)
+////                    )
+////                )
+////            );
+////            WyrmsOfNyrus.LOGGER.info("is it stupid");
+////        }
+//
+////        ConfiguredModel[] modelVariants = new ConfiguredModel[variants];
+////        for (int i = 0; i < variants; i++) {
+////            modelVariants[i] = (new ConfiguredModel(
+////                    models().cubeAll(
+////                            blockName(block),
+////                            resourceBlock(blockName(block) + "_" + i)
+////                    )
+////                )
+////            );
+////            WyrmsOfNyrus.LOGGER.info("is it stupid");
+////        }
+//
+////        ConfiguredModel[] variantzz= (ConfiguredModel[]) variantz.toArray();
+//        this.simpleBlock(block, models().cubeAll(blockName(block),
+//                (t,c)-> {
+//                    for (int i = 0; i < variants; i++) {
+//                        c[i]=
+//                    }
+//                }
+//            )
+//        );
+//    }
 
     public void crossBlock(Block block) {
         this.simpleBlock(block, models().cross(blockName(block), resourceBlock(blockName(block))).renderType("cutout"));
