@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "name": "Wyrms of Nyrus",
+        "id": "wyrms",
+        "pack_format": 15,
+        "version": "1.0",
+        "description": "All your worlds are belong to us."
+    }
+}

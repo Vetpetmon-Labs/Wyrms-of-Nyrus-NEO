@@ -2,6 +2,23 @@ architectury {
     common rootProject.enabled_platforms.split(',')
 }
 
+repositories {
+    mavenCentral()
+    maven { url "https://maven.azuredoom.com/mods" }
+    maven { url 'https://dl.cloudsmith.io/public/tslat/sbl/maven/' }
+}
+
+
+def generatedResources = file("src/generated")
+
+sourceSets {
+    main {
+        resources.srcDir generatedResources
+    }
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
 dependencies {
     // We depend on Fabric Loader here to use the Fabric @Environment annotations,
     // which get remapped to the correct annotations on each platform.
