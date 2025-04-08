@@ -20,7 +20,7 @@ public final class WyrmsOfNyrusForge {
         IEventBus MOD_BUS = context.getModEventBus();
         IEventBus EVENT_BUS = MinecraftForge.EVENT_BUS;
         WyrmsOfNyrus.init();
-        ForgePlatformHandler.register(MOD_BUS);
+        ForgeHandler.register(MOD_BUS);
 
     }
 }
