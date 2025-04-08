@@ -1,8 +1,8 @@
 package com.vetpetmon;
 
 import com.mojang.logging.LogUtils;
-import com.vetpetmon.blocks.WoNBlocks;
-import com.vetpetmon.items.WoNItems;
+import com.vetpetmon.core.block.WoNBlocks;
+import com.vetpetmon.core.item.WoNItems;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

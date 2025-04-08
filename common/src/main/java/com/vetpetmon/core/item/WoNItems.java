@@ -1,6 +1,6 @@
-package com.vetpetmon.items;
+package com.vetpetmon.core.item;
 
-import com.vetpetmon.PlatformHandler;
+import com.vetpetmon.LoaderHandler;
 import com.vetpetmon.WyrmsOfNyrus;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
@@ -27,7 +27,7 @@ public class WoNItems {
     }
 
     public static <I extends Item> Supplier<I> register(String id, Supplier<I> item) {
-        return PlatformHandler.PLATFORM_HANDLER.register(BuiltInRegistries.ITEM, id, item);
+        return LoaderHandler.PLATFORM_HANDLER.register(BuiltInRegistries.ITEM, id, item);
     }
     public static void items() {
         WyrmsOfNyrus.LOGGER.info("Registering items and block items");

@@ -1,7 +1,7 @@
 package com.vetpetmon.forge;
 
 import com.google.auto.service.AutoService;
-import com.vetpetmon.PlatformHandler;
+import com.vetpetmon.LoaderHandler;
 import com.vetpetmon.WyrmsOfNyrus;
 import it.unimi.dsi.fastutil.objects.Reference2ObjectOpenHashMap;
 import net.minecraft.core.Holder;
@@ -25,8 +25,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.function.Supplier;
 
-@AutoService(PlatformHandler.class)
-public class ForgeHandler implements PlatformHandler {
+@AutoService(LoaderHandler.class)
+public class ForgeHandler implements LoaderHandler {
     @Override
     public Platform getPlatform() {
         return Platform.FORGE;

@@ -1,7 +1,7 @@
 package com.vetpetmon.forge.data;
 
 import com.vetpetmon.WyrmsOfNyrus;
-import com.vetpetmon.blocks.WoNBlocks;
+import com.vetpetmon.core.block.WoNBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;

@@ -8,7 +8,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
 
 import java.nio.file.Path;
@@ -20,8 +19,8 @@ import java.util.function.Supplier;
 /*
     Needed to bridge the gap somehow.
  */
-public interface PlatformHandler {
-    PlatformHandler PLATFORM_HANDLER = load(PlatformHandler.class);
+public interface LoaderHandler {
+    LoaderHandler PLATFORM_HANDLER = load(LoaderHandler.class);
     Platform getPlatform();
     Path configPath();
 

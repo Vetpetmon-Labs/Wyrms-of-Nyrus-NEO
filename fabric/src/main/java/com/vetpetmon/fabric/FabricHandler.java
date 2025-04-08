@@ -1,7 +1,7 @@
 package com.vetpetmon.fabric;
 
 import com.google.auto.service.AutoService;
-import com.vetpetmon.PlatformHandler;
+import com.vetpetmon.LoaderHandler;
 import com.vetpetmon.WyrmsOfNyrus;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -21,8 +21,8 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.function.Supplier;
 
-@AutoService(PlatformHandler.class)
-public class FabricHandler implements PlatformHandler {
+@AutoService(LoaderHandler.class)
+public class FabricHandler implements LoaderHandler {
     @Override
     public Platform getPlatform() {return Platform.FABRIC;}
 

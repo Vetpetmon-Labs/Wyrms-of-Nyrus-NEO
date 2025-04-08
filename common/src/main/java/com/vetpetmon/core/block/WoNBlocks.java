@@ -1,8 +1,8 @@
-package com.vetpetmon.blocks;
+package com.vetpetmon.core.block;
 
-import com.vetpetmon.PlatformHandler;
+import com.vetpetmon.LoaderHandler;
 import com.vetpetmon.WyrmsOfNyrus;
-import com.vetpetmon.items.WoNItems;
+import com.vetpetmon.core.item.WoNItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -76,7 +76,7 @@ public class WoNBlocks {
     }
 
     public static <B extends Block> Supplier<B> register(String id, Supplier<B> block) {
-        return PlatformHandler.PLATFORM_HANDLER.register(BuiltInRegistries.BLOCK, id, block);
+        return LoaderHandler.PLATFORM_HANDLER.register(BuiltInRegistries.BLOCK, id, block);
     }
     public static void blocks() {
         WyrmsOfNyrus.LOGGER.info("Registering blocks");

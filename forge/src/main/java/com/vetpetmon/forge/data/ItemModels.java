@@ -2,7 +2,7 @@ package com.vetpetmon.forge.data;
 
 import com.google.common.collect.Sets;
 import com.vetpetmon.WyrmsOfNyrus;
-import com.vetpetmon.blocks.WoNBlocks;
+import com.vetpetmon.core.block.WoNBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
